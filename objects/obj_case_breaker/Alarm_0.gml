@@ -39,7 +39,7 @@ else
 			total_wait += 0.5;
 		}
 	
-		if(nummy == array_length(summation)-1) total_wait += 5;
+		if(nummy == array_length(summation)) total_wait += 5;
 	}
 
 	alarm[0] = total_wait * room_speed;
