@@ -1,4 +1,4 @@
-if(room == rm_breakthecase)
+if(room != rm_breakthecase)
 {
 	if(room == rm_city_view) draw_set_alpha(0.4);
 
