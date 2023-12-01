@@ -1,0 +1,1 @@
+if (zoom_target < maxzoom && room == rm_map) zoom_target += zoom_speed;

@@ -1,0 +1,1 @@
+global.det_appear = [irandom(2), irandom(7), irandom(1)];

@@ -1,0 +1,23 @@
+enum furniture
+{
+	table,
+	bed,
+	cupboard,
+	tv,
+	shelf,
+	hardshelf,
+	gunshelf,
+	pizzatable,
+	bar,
+	desk,
+	speaker,
+	bush,
+	bin,
+	security,
+	train,
+	forensics,
+	coroner,
+	camera,
+	desk_police,
+	namesign
+}

@@ -1,0 +1,1 @@
+if(room == rm_city_view && keyboard_check_pressed(vk_escape)) obj_roomtrans.transition(rm_indoors);
