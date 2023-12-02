@@ -370,6 +370,15 @@ if(global.evidence_show)
 						draw_text(1920/4 + 128 + 32, 170*((i%4)+2)-64+sh+sh2, "Fingerprints not taken");
 						draw_set_color(c_white);
 					}
+					
+					if(point_in_rectangle(tx*scale, ty*scale, 1920/4, 170*((i%4)+2) - 64, 1920/4 * 3, 170*((i%4)+2) + 64))
+					{
+						if(mouse_check_button_pressed(mb_left) && !(pers.killer && global.difficulty == 0 && array_contains(global.fingerprints, evd)))
+						{
+							array_delete(global.suspects, i, 1);
+							audio_play_sound(sfx_menuconf, 1, 0);
+						}
+					}
 				}
 			}
 			
@@ -379,10 +388,10 @@ if(global.evidence_show)
 			if(total != 0)
 			{
 				draw_set_halign(fa_center);
-				draw_set_valign(fa_top);
+				draw_set_valign(fa_bottom);
 				draw_set_color(c_lime);
 				draw_set_font(fon_century_0);
-				draw_text(1920/2, 1080/50 + 200, "Page " + string(page) + " of " + string(ceil(i/4)));
+				draw_text(1920/2, 1080/50 + 200, "CLICK SUSPECTS TO REMOVE THEM\n" + "Page " + string(page) + " of " + string(ceil(i/4)));
 			}
 			
 			draw_set_color(c_white);

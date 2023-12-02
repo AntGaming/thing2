@@ -74,11 +74,13 @@ function finish()
 		case "restart":
 		{
 			game_restart();	
+			break;//break statement in question
 		}
 		
 		case "summation":
 		{
-			room_goto(rm_breakthecase);	
+			room_goto(rm_breakthecase);
+			break;
 		}
 	};
 }
